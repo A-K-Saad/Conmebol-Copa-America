@@ -24,7 +24,7 @@ p{
     Header Part
 =========================*/
 header{
-    background: url(images/bg.png);
+    background: url(images/backgrounds/bg.png);
     padding: 20px 0;
     background-attachment: fixed;
 }
@@ -61,7 +61,7 @@ nav ul li a{
 .header-part-single img{
     width: 100%;
     overflow: hidden;
-    transition: all 1s ease-out;
+    transition: all 0.7s ease-out;
 }
 .header-part-single img:hover{
     transform: rotateY(180deg);
@@ -98,7 +98,7 @@ nav ul li a{
     All Players
 =========================*/
 main>section{
-    background: url(images/bg-2.png);
+    background: url(images/backgrounds/bg-2.png);
 }
 .all-players{
     display: grid;
@@ -152,8 +152,9 @@ main>section{
 =========================*/
 .sponsor-wrapper{
     width: 100%;
-    background-image: url(images/bg-3.png);
+    background-image: url(images/backgrounds/bg-4.jpg);
     background-size: cover;
+    background-attachment: fixed;
 }
 .sponsors{
     margin: 0 auto;
@@ -176,7 +177,8 @@ main>section{
 =========================*/
 .footer-section{
     margin: 0 auto;
-    width: 45%;
+    width: 50%;
+    padding: 25px 0;
     text-align: center;
 }
 .footer-section img{
