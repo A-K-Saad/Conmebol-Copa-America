@@ -18,40 +18,78 @@ p{
 .container{
     width: 80%;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 35px 0;
 }
 /*=========================
     Header Part
 =========================*/
 header{
-    background-color: #2D25A0;
+    background: url(images/bg.png);
     padding: 20px 0;
 }
-header .container{
+header .intro{
     color: aliceblue;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+.logout{
+    display: flex;
+}
 .header-part-single h1{
     font-size: 64px;
     width: 90%;
-    margin-bottom: 20px;
+    line-height: 80px;
 }
 .header-part-single img{
     width: 100%;
 }
 .watch-btn{
-    background-color: #E02C6D;
-    color: floralwhite;
-    text-decoration: none;
-    padding: 10px 20px;
+    display: inline-block;
+    margin: 20px 0;
 }
-.watch-btn i{
+.watch-btn, .logout-btn{
+    width: 120px;
+    background: linear-gradient(-10deg, #002fff, #2c80e0);
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    transition: all 1s ease;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+}
+.watch-btn:hover{
+    background:  linear-gradient(30deg, #0011ff, #1559eb);
+    box-shadow: 0px 0px 15px #18c7b0;
+    color: #fff;
+    transition: all 1s ease;
+}
+.watch-btn i, .logout i{
     padding-left: 15px;
 }
 /*=========================
     All Players
 =========================*/
+main>article{
+    background: url(images/bg-2.png);
+}
 .all-players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -75,6 +113,31 @@ header .container{
     font-size: 16px;
     line-height: 26px;
     margin-bottom: 15px;
+    text-align: justify;
+}
+/*=========================
+    Sponsors
+=========================*/
+.sponsor-wrapper{
+    width: 100%;
+    background-image: url(images/bg-3.png);
+    background-size: cover;
+}
+.sponsors{
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+}
+.sponsors h1{
+    margin-bottom: 40px;
+    font-size: 40px;
+    text-align: center;
+    color: antiquewhite;
+}
+.sponsors img{
+    width: 100px;
+    margin: 0 auto;
+    padding: 15px;
 }
 /*=========================
     Footer Section
@@ -113,11 +176,12 @@ header .container{
 }
 .copy-right{
     padding-top: 20px;
+    font-size: 18px;
 }
 /*=========================
     Media Query
 =========================*/
-@media only screen and (max-width:668px){
+@media only screen and (max-width:688px){
     .container{
         width: 90%;
     }
@@ -125,8 +189,12 @@ header .container{
         grid-template-columns: repeat(1, 1fr);
         row-gap: 2em;
     }
+    nav{
+        display: none;
+    }
     .header-part-single h1{
         font-size: 36px;
+        line-height: 50px;
     }
     /* All Players */
     .all-players{
