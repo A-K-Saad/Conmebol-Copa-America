@@ -60,6 +60,11 @@ nav ul li a{
 }
 .header-part-single img{
     width: 100%;
+    overflow: hidden;
+    transition: all 1s ease-out;
+}
+.header-part-single img:hover{
+    transform: rotateY(180deg);
 }
 .watch-btn{
     display: inline-block;
@@ -76,10 +81,14 @@ nav ul li a{
     font-size: 18px;
     text-align: center;
 }
+.logout-btn:hover{
+    color: #ffcece;
+    transition: all 1s ease;
+}
 .watch-btn:hover{
     background:  linear-gradient(30deg, #0011ff, #1559eb);
     box-shadow: 0px 0px 15px #18c7b0;
-    color: #fff;
+    color: #ffcece;
     transition: all 1s ease;
 }
 .watch-btn i, .logout i{
@@ -88,7 +97,7 @@ nav ul li a{
 /*=========================
     All Players
 =========================*/
-main>article{
+main>section{
     background: url(images/bg-2.png);
 }
 .all-players{
