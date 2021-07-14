@@ -5,7 +5,6 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    background: #f0eeee;
 }
 h1, h2, h3, h4, h5, h6{
     font-weight: 700;
@@ -32,9 +31,6 @@ header .container{
     color: aliceblue;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-}
-.header-part-single{
-
 }
 .header-part-single h1{
     font-size: 64px;
@@ -63,7 +59,7 @@ header .container{
 .player-single{
     padding: 15px;
     background-color: #fff;
-    box-shadow: 0 0 5px gray;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     margin: 15px;
 }
 .player-single img{
@@ -79,6 +75,44 @@ header .container{
     font-size: 16px;
     line-height: 26px;
     margin-bottom: 15px;
+}
+/*=========================
+    Footer Section
+=========================*/
+.footer-section{
+    margin: 0 auto;
+    width: 45%;
+    text-align: center;
+}
+.footer-section img{
+    width: 100%;
+}
+.social-icon{
+    font-size: 40px;
+}
+.social-icon a{
+    line-height: 55px;
+    padding: 15px;
+}
+.fa-youtube{
+    color: #f00;
+}
+.fa-instagram{
+    content: "\f16d";
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    padding: 0 3px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fa-dribbble{
+    color: #f03a80;
+}
+.fa-twitter{
+    color: #00b8ff;
+}
+.copy-right{
+    padding-top: 20px;
 }
 /*=========================
     Media Query
@@ -101,5 +135,13 @@ header .container{
     }
     .player-single{
         margin: 10px 0;
+    }
+    /* Footer Section */
+    .footer-section{
+        width: 85%;
+    }
+    .social-icon a{
+        font-size: 25px;
+        padding: 0;
     }
 }
